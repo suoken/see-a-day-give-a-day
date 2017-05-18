@@ -21,11 +21,26 @@
       <img id="united-way-thumb" crossorigin="anonymous" src="images/thumb-united-way.jpg">
       <img id="after-united" crossorigin="anonymous" src="images/after-united-stage.jpg">
       <img id= "after-united-thumb" crossorigin="anonymous" src="images/thumb-after-united.jpg">
+      <img id="title-thumb" crossorigin="anonymous" src="images/title.png">
+
 
       <!-- Image link template to be reused. -->
       <script id="link" type="text/html">
         <a-entity class="link"
           geometry="primitive: plane; height: 1; width: 1"
+          material="shader: flat; src: ${thumb}"
+          event-set__1="_event: mousedown; scale: 1 1 1"
+          event-set__2="_event: mouseup; scale: 1.2 1.2 1"
+          event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
+          event-set__4="_event: mouseleave; scale: 1 1 1"
+          set-image="on: click; target: #image-360; src: ${src}"
+          sound="on: click; src: #click-sound"></a-entity>
+      </script>
+
+
+      <script id="link2" type="text/html">
+        <a-entity class="link"
+          geometry="primitive: plane; height: 1; width: 4"
           material="shader: flat; src: ${thumb}"
           event-set__1="_event: mousedown; scale: 1 1 1"
           event-set__2="_event: mouseup; scale: 1.2 1.2 1"
@@ -44,6 +59,10 @@
       <a-entity template="src: #link" data-src="#before-united" data-thumb="#before-united-thumb"></a-entity>
       <a-entity template="src: #link" data-src="#united-way" data-thumb="#united-way-thumb"></a-entity>
       <a-entity template="src: #link" data-src="#after-united" data-thumb="#after-united-thumb"></a-entity>
+    </a-entity>
+
+    <a-entity id="title" position="-0.5 0.5 -4">
+      <a-entity template="src: #link2" data-src="" data-thumb="#title-thumb"></a-entity>
     </a-entity>
 
     <!-- Camera + cursor. -->
