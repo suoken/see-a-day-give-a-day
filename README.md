@@ -1,1 +1,5 @@
-# see-a-day-give-a-day
+# See a Day, Give a Day
+
+This project was for the United Way #Create4Community hackathon - a hackathon for the United Way whose mission statement is to find unique solutions to engage 1 million individuals in the GTA to be involved in community engagement and giving. 
+
+See a Day, Give a Day is a WebVR application that assist in telling the stories of 200 community hubs across the GTA. Our team recognized that each community hub has a unique story that everyone does not know about and our team wanted to improve that story telling aspect by producing a VR application. We made a WebVR application because we wanted these stories to be experienced on the desktop or through mobile phone with the simple click of a link. This WebVR app would be part of the United Way campaign toolkit and would help 1 million people in the GTA empathize with the stories told through VR and then they would donate money to the United Way or donate their time by volunteering with the United Way (See a Day, Give a Day). 
